@@ -42,6 +42,11 @@ jobs:
           name: Back-End Build
           command: |
             npm run api:build
+ # Set Elastic Beanstalk Environment Variables
+      - run:
+          name: Set Elastic Beanstalk Environment Variables
+          command: |
+            npm run api:set_eb_env
 # Deploying the backend to AWS Elastic Beanstalk
       - run:
           name: Back-End Deploy
