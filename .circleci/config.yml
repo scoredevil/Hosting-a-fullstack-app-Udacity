@@ -25,7 +25,7 @@ jobs:
           name: Front-End Tests
           command: |
              npm run frontend:test
-        - run:
+      - run:
            name: Front-End End-to-end Testing
            command: |
              npm run frontend:e2e
