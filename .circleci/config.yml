@@ -20,7 +20,7 @@ jobs:
       - run:
           name: Front-End Tests
           command: |
-             npm run frontend:lint
+             npm run frontend:e2e
 
 # Building the frontend
       - run:
